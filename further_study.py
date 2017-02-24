@@ -94,7 +94,7 @@ def custom_insert(input_list, index, value):
 
     """
 
-    pass
+    input_list[:] = input_list[:index] + [value] + input_list[index:]
 
 
 def custom_remove(input_list, value):
