@@ -240,7 +240,14 @@ def custom_equality(some_list, another_list):
 
     """
 
-    return None
+    index = 0
+    result = True
+    for item in some_list:
+        if item != another_list[index]:
+            result = False
+            break
+        index += 1
+    return result
 
 
 ##############################################################################
