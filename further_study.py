@@ -136,9 +136,9 @@ def custom_pop(input_list):
         ['Jan', 'Feb']
 
     """
-
-    return None
-
+    popped = input_list[-1]
+    input_list[:] = input_list[:-1]
+    return popped
 
 def custom_index(input_list, value):
     """Returns the index of the first item of value found in input_list.
