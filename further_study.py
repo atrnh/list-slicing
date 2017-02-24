@@ -215,12 +215,11 @@ def custom_contains(input_list, value):
         True
 
     """
-    result = False
+
     for item in input_list:
         if item == value:
-            result = True
-            break
-    return result
+            return True
+    return False
         
 
 
@@ -241,13 +240,11 @@ def custom_equality(some_list, another_list):
     """
 
     index = 0
-    result = True
     for item in some_list:
         if item != another_list[index]:
-            result = False
-            break
+            return False
         index += 1
-    return result
+    return True
 
 
 ##############################################################################
